@@ -1,8 +1,10 @@
 var seconds = 00;
 var tens = 00;
+var minutes = 00;
 
 var appendTens = document.querySelector(".tens");
 var appendSeconds = document.querySelector(".seconds");
+var appendMinutes = document.querySelector(".minutes");
 var buttonStart = document.querySelector(".start");
 var buttonStop = document.querySelector(".stop");
 var buttonRestart = document.querySelector(".restart");
@@ -25,6 +27,12 @@ function startTimer() {
   }
   if (seconds > 9) {
     appendSeconds.innerHTML = seconds;
+  }
+  if ( seconds > 59 ) {
+    minutes++;
+    appendMinutes.innerHTML = "0" + minutes;
+    seconds = 0;
+    appendSeconds.innerHTML = "0" + 0;
   }
 }
 buttonStart.addEventListener("click", () => {
