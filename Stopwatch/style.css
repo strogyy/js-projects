@@ -6,59 +6,59 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(2, 0, 36);
-  background: rgb(238, 174, 202);
-
-  background: rgb(238, 174, 202);
   background: linear-gradient(
     43deg,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
+    rgb(196, 73, 126) 0%,
+    rgb(3, 80, 90) 100%
   );
 }
-
 .stopwatch {
   letter-spacing: 7px;
-  font-size: 90px;
+  font-size: 110px;
   text-align: center;
-
   margin-bottom: 40px;
   text-transform: uppercase;
+  color: #fff;
 }
-
 .seconds {
-  color: white;
   position: relative;
 }
 .seconds::before {
-  content: "seconds";
+  content: "secs";
   color: white;
-  left: -70px;
+  left: -40px;
   font-size: 12px;
   position: absolute;
   top: 30px;
   letter-spacing: 1px;
 }
-
 .tens {
-  color: white;
   position: relative;
 }
 .tens::after {
-  content: "milliseconds";
+  content: "ms";
   color: white;
   font-size: 12px;
   position: absolute;
-
-  top: 77px;
+  top: 100px;
   letter-spacing: 1px;
+}
+.minutes::after {
+  content: "mins";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 100px;
+  letter-spacing: 1px;
+}
+.min-contaniner {
+  position: relative;
 }
 .btn {
   margin: 10px;
@@ -66,5 +66,5 @@ body {
   background-color: white;
   border-radius: 20px;
   text-decoration: none;
-  color: #20d5fd;
+  color: #000000;
 }
