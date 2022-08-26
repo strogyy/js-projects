@@ -78,7 +78,7 @@ nextButton.addEventListener("click", function () {
   if (num === 1) {
     answer1.innerText = questions[num].correct;
     answer2.innerText = questions[num].ans2;
-    answer3.innerText = questions[num].ans1;
+    answer3.innerText = questions[num].ans3;
     answer4.innerText = questions[num].ans4;
   }
 
