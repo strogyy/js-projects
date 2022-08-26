@@ -69,9 +69,5 @@ body {
 .numberOfQuestion {
   margin-right: 7px;
 }
-.question-container {
-  max-height: 23px;
-  overflow: hidden;
-}
 
 
